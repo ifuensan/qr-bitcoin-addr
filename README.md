@@ -1,5 +1,3 @@
-# qr-bitcoin-addr
-
 # 🧾 Generador de Código QR para Direcciones Bitcoin en Python
 
 Este pequeño script de Python permite generar un código QR a partir de una dirección de Bitcoin. Funciona en macOS y Ubuntu.
