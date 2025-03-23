@@ -1,4 +1,4 @@
-# 🧾 QR Code Generator for Bitcoin Addresses
+# 🧾 QR Code Generator for Bitcoin addresses
 
 This small Python script allows you to generate a QR code from a Bitcoin address. It works on macOS and Ubuntu.
 
@@ -30,7 +30,7 @@ pip3 install qrcode[pil]
 pip install "qrcode[pil]"
 ```
 
-## 🚀 How to Use
+## 🚀 How to use
 Save the following code as qr_btc.py:
 
 ```python
@@ -60,7 +60,7 @@ python3 qr_btc.py
 
 Enter your Bitcoin address when prompted. The file bitcoin_qr.png will be generated in the same directory.
 
-## 🖼️ Open the Image
+## 🖼️ Open the image
 On Mac:
 ```bash
 open bitcoin_qr.png
