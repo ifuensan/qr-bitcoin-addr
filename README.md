@@ -8,7 +8,7 @@ Este pequeño script de Python permite generar un código QR a partir de una dir
 - Pip
 - Librería `qrcode` y `Pillow`
 
-### Instalación (Mac & Ubuntu)
+## Instalación (Mac & Ubuntu)
 
 ```bash
 # Verifica si tienes Python 3
@@ -26,7 +26,7 @@ sudo apt install python3-pip
 pip3 install qrcode[pil]
 ```
 
-🚀 Cómo usar
+## 🚀 Cómo usar
 Guarda el siguiente código como qr_btc.py:
 
 ```
@@ -48,7 +48,7 @@ qr.save(filename)
 print(f"✅ Código QR generado: {filename}")
 ```
 
-▶️ Ejecución
+## ▶️ Ejecución
 
 ```
 python3 qr_btc.py
@@ -56,8 +56,7 @@ python3 qr_btc.py
 
 Introduce tu dirección de Bitcoin cuando se te solicite. El archivo bitcoin_qr.png se generará en el mismo directorio.
 
-
-🖼️ Abrir la imagen
+## 🖼️ Abrir la imagen
 En Mac:
 ```
 open bitcoin_qr.png
