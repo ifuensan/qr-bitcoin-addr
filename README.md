@@ -1,72 +1,72 @@
-# 🧾 Generador de código QR para direcciones Bitcoin
+# 🧾 QR Code Generator for Bitcoin Addresses
 
-Este pequeño script de Python permite generar un código QR a partir de una dirección de Bitcoin. Funciona en macOS y Ubuntu.
+This small Python script allows you to generate a QR code from a Bitcoin address. It works on macOS and Ubuntu.
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
 - Python 3
 - Pip
-- Librería `qrcode` y `Pillow`
+- `qrcode` and `Pillow` libraries
 
-## Instalación (Mac & Ubuntu)
+## Installation (Mac & Ubuntu)
 
 ```bash
-# Verifica si tienes Python 3
+# Check if you have Python 3
 python3 --version
 
-# Instala pip si no lo tienes
-# En Mac:
+# Install pip if you don't have it
+# On Mac:
 sudo easy_install pip
 
-# En Ubuntu:
+# On Ubuntu:
 sudo apt update
 sudo apt install python3-pip
 
-# Instala la librería necesaria
-# En Ubuntu:
+# Install the required library
+# On Ubuntu:
 pip3 install qrcode[pil]
 
-# En Mac:
+# On Mac:
 pip install "qrcode[pil]"
 ```
 
-## 🚀 Cómo usar
-Guarda el siguiente código como qr_btc.py:
+## 🚀 How to Use
+Save the following code as qr_btc.py:
 
-```
+```python
 import qrcode
 
-# Solicita dirección de Bitcoin
-bitcoin_address = input("Introduce tu dirección de Bitcoin: ").strip()
+# Request Bitcoin address
+bitcoin_address = input("Enter your Bitcoin address: ").strip()
 
-# Construye el URI con prefijo estándar
+# Construct the URI with standard prefix
 uri = f"bitcoin:{bitcoin_address}"
 
-# Genera el código QR
+# Generate the QR code
 qr = qrcode.make(uri)
 
-# Guarda el código QR como imagen PNG
+# Save the QR code as a PNG image
 filename = "bitcoin_qr.png"
 qr.save(filename)
 
-print(f"✅ Código QR generado: {filename}")
+print(f"✅ QR code generated: {filename}")
 ```
 
-## ▶️ Ejecución
+## ▶️ Execution
 
-```
+```bash
 python3 qr_btc.py
 ```
 
-Introduce tu dirección de Bitcoin cuando se te solicite. El archivo bitcoin_qr.png se generará en el mismo directorio.
+Enter your Bitcoin address when prompted. The file bitcoin_qr.png will be generated in the same directory.
 
-## 🖼️ Abrir la imagen
-En Mac:
-```
+## 🖼️ Open the Image
+On Mac:
+```bash
 open bitcoin_qr.png
 ```
 
-En Ubuntu:
-```
+On Ubuntu:
+```bash
 xdg-open bitcoin_qr.png
 ```
