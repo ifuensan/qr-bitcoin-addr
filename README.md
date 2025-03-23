@@ -23,7 +23,11 @@ sudo apt update
 sudo apt install python3-pip
 
 # Instala la librería necesaria
+# En Ubuntu:
 pip3 install qrcode[pil]
+
+# En Mac:
+pip install "qrcode[pil]"
 ```
 
 ## 🚀 Cómo usar
