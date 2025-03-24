@@ -1,6 +1,8 @@
 # 🧾 QR code generator for Bitcoin addresses
 
 This small Python script allows you to generate a QR code from a Bitcoin address. It works on macOS and Ubuntu.
+Using BIP-021 espec https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki#simpler-syntax
+
 
 ## 🛠️ Requirements
 
